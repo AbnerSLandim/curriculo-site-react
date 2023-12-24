@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Roboto&display=swap');
+
+
+main{
+    display: grid;
+    grid-template-areas:
+        "ads    conteudo    sidebar"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:  68vh 20vh;
+    
+}
+
+header {grid-area: topbar; }
+#pfp {grid-area: ads;}
+aside{grid-area: sidebar;}
+article{grid-area: conteudo;}
+footer {grid-area: footer; }
+
+
+
+#videoBackground{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+
+#pfp{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#pfp img{
+    width: 300px;
+    height: 300px;
+}
+
+article{    
+    padding-top: 5em;
+    padding-left: 2em;
+    color: white;
+}
+
+article h1{
+    font-size: 3.5em;
+}
+
+article h4{
+    font-size: 1.5em;
+}
